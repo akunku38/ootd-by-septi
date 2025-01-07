@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOTD Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe4e1; /* Pink pastel background */
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffc1cc; /* Light pink */
+            color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ffc1cc;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OOTD Gallery</h1>
+        <p>Your daily inspiration for Outfit of the Day</p>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="ootd1.jpeg" alt="OOTD 1">
+                <div class="caption">OOTD 1</div>
+            </div>
+            <div class="gallery-item">
+                <img src="ootd2.jpeg" alt="OOTD 2">
+                <div class="caption">OOTD 2</div>
+            </div>
+            <div class="gallery-item">
+                <img src="ootd3.jpeg" alt="OOTD 3">
+                <div class="caption">OOTD 3</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 OOTD Gallery By Septi Riskasari. All Rights Reserved.
+        <br>
+        Kunjungi web kami: <a href="https://twingkybabyshop.infinityfreeapp.com/?i=2" target="_blank" style="color: #fff; text-decoration: underline;">Visit Our Partner</a>
+    </footer>
+</body>
+</html>
